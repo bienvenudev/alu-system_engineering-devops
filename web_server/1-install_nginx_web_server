@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Script that configures Nginx to a new Ubuntu machine
+
+sudo apt-get update
+sudo apt-get -y install nginx
+
+sudo apt-get install ufw
+sudo ufw allow 'Nginx HTTP'
+
+echo "Holberton School for the win!" | sudo tee /var/www/html/index.
+
+sudo service nginx restart
