@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - Page Not Found</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #0a0a0a;
+        color: #fff;
+        background-position: 0 0, 25px 25px;
+        background-size: 50px 50px;
+        background-image: radial-gradient(#333 1px, transparent 0),
+          radial-gradient(#333 1px, transparent 0);
+        font-family: Arial, sans-serif;
+        text-align: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 6rem;
+        font-weight: bold;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin-top: -10px;
+        opacity: 0.8;
+        margin-bottom: 2rem;
+      }
+
+      .astronaut {
+        width: 100px;
+        animation: float 3s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(40px);
+        }
+        50% {
+          transform: translateY(-15px);
+        }
+      }
+
+      .btn {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 1rem;
+        color: #0a0a0a;
+        background: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .btn:hover {
+        background: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>404</h1>
+    <br />
+    <p>Oops... Looks like you're lost in space!</p>
+    <img src="astronaut.png" class="astronaut" alt="Floating Astronaut" />
+    <br />
+    <a class="btn" href="#">Return to Safety</a>
+  </body>
+</html>
